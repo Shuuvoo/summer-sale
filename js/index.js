@@ -1,16 +1,33 @@
-let total = 0;
 
-function handleCLikBtn(target) {
-  const selectedItemContainer = document.getElementById("selected-items");
-  const itemName = target.parentNode.childNodes[1].innerText;
+const selectedItemContainer = document.getElementById("shuvo");
+ let total = 0;
+ function handlesum(event){
+  console.log('this is ')
+ }
+ function handleCLikBtn(target){
+const itemName = (target.childNodes[3].childNodes[1].innerText) 
+const parentDiv = document.getElementById("selectedItem")
+// console.log(parentDiv)
   const li = document.createElement("li");
   li.innerText = itemName;
-  selectedItemContainer.appendChild(li);
-  const price = target.parentNode.childNodes[5].innerText.split(" ")[1];
-  total = parseInt(total) + parseInt(price);
-  document.getElementById("total").innerText = total;
+  parentDiv.appendChild(li);
+  totalCalculate(target)
+
+  // const price = target.childNodes[3].childNodes[3].innerText.split(" ")[0];
+  // const itemPrice =  parseFloat(price).toFixed(2);
+  // let taka = document.getElementById("total");
+  // const totalSum = parseFloat(taka.innerText)
+  // const totalPrice = parseFloat(itemPrice)+ parseFloat(totalSum)
+  // taka.innerText = totalPrice
+
+
 }
 
-// document.getElementById("").addEventListener("click", function (e) {
-//     e.target
-// })
+function totalCalculate(target){
+  const price = target.childNodes[3].childNodes[3].innerText.split(" ")[0];
+  const itemPrice =  parseFloat(price).toFixed(2);
+  let taka = document.getElementById("total");
+  const totalSum = parseFloat(taka.innerText)
+  const totalPrice = parseFloat(itemPrice)+ parseFloat(totalSum)
+  taka.innerText = totalPrice
+}
