@@ -1,4 +1,5 @@
 
+
 const selectedItemContainer = document.getElementById("shuvo");
  let total = 0;
  function handlesum(event){
