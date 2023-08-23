@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Summer sale new</title>
+  <link rel="shortcut icon" href="./images/Summer 1.png " type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 
   <!-- tailwind and daisy UI -->
@@ -27,7 +28,7 @@
   <header>
     <!-- banner section -->
     <div class="container mx-auto bg-[#F9F6E2]">
-      <div class="hero min-h-screen  ">
+      <div class="hero h-[60vh]  ">
         <div class="hero-content flex-col md:flex-col lg:flex-row-reverse ">
           <img src="./images/Summer 1.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
@@ -35,8 +36,8 @@
             <h1 class="text-5xl font-bold text-center">Purchase TK 200 or <br>
               above & get <span class="text-rose-500">20% off</span></h1>
 
-            <p class="text-center mt-9">Use Promo Code</p>
-            <button class="btn btn-primary mx-auto ">SELL200</button>
+            <p class="text-center text-black font-medium mt-9 mb-3">Use Promo Code</p>
+            <button id="sell200" class="btn btn-primary mx-[40%] ">SELL200</button>
           </div>
         </div>
       </div>
@@ -46,11 +47,11 @@
     <!-- card section starts here -->
 
     <section>
-      <div class="flex flex-wrap mx-[5%] bg-[#F8F8F8]">
+      <div class="flex flex-wrap justify-content-around mx-[5%] bg-[#F8F8F8]">
         <div class="left-side-container w-[70%]">
           <div>
             <h1 class="mb-10 mt-10 text-black font-bold text-3xl">Kitchenware</h1>
-            <div class="flex justify-content-around gap-6 shadow-2xl">
+            <div class="flex d-flex justify-content-around flex-wrap  gap-6 shadow-1xl">
               <div class="box-1 shadow-2xl mb-6 " id="box-btn">
                 <div onclick="handleCLikBtn(this)" class="box-1  w-56 h-60 bg-[#FFF] rounded-lg">
                   <div class="img-div ">
@@ -74,7 +75,7 @@
               <div class="box-2 shadow-1xl mb-6 " id="box-btn">
                 <div onclick="handleCLikBtn(this)" class="box-1  w-56 h-60 bg-[#FFF] rounded-lg">
                   <div class="img-div ">
-                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod1.png" alt="">
+                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod2.png" alt="">
                   </div>
                   <div class="heading-div">
                     <h1 class="mt-2 text-center font-semibold text-sm">Baloon Set</h1>
@@ -94,7 +95,7 @@
               <div class="box-3 shadow-2xl mb-6 " id="box-btn">
                 <div onclick="handleCLikBtn(this)" class="box-1  w-56 h-60 bg-[#FFF] rounded-lg">
                   <div class="img-div ">
-                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod1.png" alt="">
+                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod3.png" alt="">
                   </div>
                   <div class="heading-div">
                     <h1 class="mt-2 text-center font-semibold text-sm">Home Cooker</h1>
@@ -118,11 +119,11 @@
           </div>
           <div>
             <h1 class="mt-10 mb-10 text-black font-bold text-3xl">Sportswear</h1>
-            <div class="flex justify-content-around gap-6 shadow-2xl">
+            <div class="flex d-flex justify-content-around flex-wrap gap-6  shadow-1xl">
               <div class="box-4 shadow-2xl mb-6 " id="box-btn">
                 <div onclick="handleCLikBtn(this)" class="box-1  w-56 h-60 bg-[#FFF] rounded-lg">
                   <div class="img-div ">
-                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod1.png" alt="">
+                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod4.png" alt="">
                   </div>
                   <div class="heading-div">
                     <h1 class="mt-2 text-center font-semibold text-sm">Sports Back Cap</h1>
@@ -142,7 +143,7 @@
               <div class="box-5 shadow-2xl mb-6 " id="box-btn">
                 <div onclick="handleCLikBtn(this)" class="box-1  w-56 h-60 bg-[#FFF] rounded-lg">
                   <div class="img-div ">
-                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod1.png" alt="">
+                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod5.png" alt="">
                   </div>
                   <div class="heading-div">
                     <h1 class="mt-2 text-center font-semibold text-sm">Full Jersey Set </h1>
@@ -162,7 +163,7 @@
               <div class="box-6 shadow-2xl mb-6 " id="box-btn">
                 <div onclick="handleCLikBtn(this)" class="box-1  w-56 h-60 bg-[#FFF] rounded-lg">
                   <div class="img-div ">
-                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod1.png" alt="">
+                    <img class="bg-[#1111110d] mx-auto  w-36 h-36  rounded-lg pt-2 p-1" src="./images/prod6.png" alt="">
                   </div>
                   <div class="heading-div">
                     <h1 class="mt-2 text-center font-semibold text-sm">Sports cates</h1>
@@ -191,28 +192,29 @@
 
         </div>
 
-        <div class="right-side-container md:w-[20%] mt-28 pl-20">
+        <div class="right-side-container md:w-[20%] mt-28 pl-[2%]">
 
-          <div class=" bg-[#fff] w-56 h-40 mb-4">
+          <div class=" bg-[#fff] w-56 h-40 mb-4 pl-3">
             <h1 class="text-base  text-black font-semibold pt-3 pl-3">Have coupon?</h1>
-            <input class="px-3 py-2 w-[70%] h-8 pl-3 border-solid border-2 border-gray-200 rounded-sm" type="text"
-              name="" id="" placeholder="Coupon code">
+            <input id="discount-input" class="px-3 py-2 w-[70%] h-8 pl-3 border-solid border-2 border-gray-200 rounded-sm" type="text"
+              name=""  placeholder="Coupon code">
 
-            <button  id="apply-btn" class="bg-[#E527B2] pl-3 w-28 h-8 mt-3 rounded-md">Apply</button>
+            <button onclick="cuponClick(this)" id="apply-btn" class="bg-[#E527B2] pl-3 w-28 h-8 mt-3 rounded-md">Apply</button>
           </div>
 
           <div class="bg-[#fff] w-56 h-100">
-            <div id="selectedItem" class="mt-10"></div>
+            <div id="selectedItem" class="mt-10 pl-3 "></div>
             
             <hr>
-            <p>Total Price: <span id="total">0</span> TK</p>
-            <p>Discount: 0%</p>
-            <p >Total: <span class="">0</span> TK</p>
+            <p class="pl-3 mt-3" >Total Price: <span id="total">0</span> TK</p>
+            <p id="discount-price" class="pl-3">Discount: 0%</p>
+            <p  class="pl-3">Total: <span id="total-price">0</span> TK</p>
+            <br> <hr>
             
             <!-- modal -->
             <div class="text-center">
               <!-- Open the modal using ID.showModal() method -->
-          <button class="btn bg-[#E527B2] w-[100%] h-10 rounded-md" onclick="my_modal_1.showModal()">Make Purchase</button>
+          <button id="make-purchase" class="p-btn bg-[#E527B2] w-[100%] h-10 rounded-md" onclick="my_modal_1.showModal()" >Make Purchase</button>
           <dialog id="my_modal_1" class="modal">
           <form method="dialog" class="modal-box">
             <img class="mx-auto" src="./images/congo.png" alt="">
@@ -220,7 +222,7 @@
           <p class="py-4">Your Purchase the product</p>
           <div class="modal-action">
          <!-- if there is a button in form, it will close the modal -->
-        <button class="btn mx-auto">Go Home</button>
+        <button class="btn mx-auto " value="Reload Page" onclick="window.location.reload(true)">Go Home</button>
         </div>
          </form>
           </dialog>
@@ -241,6 +243,8 @@
   </main>
 
   <script src="./js/index.js"></script>
+
+  <footer class="p-10"> <p class="text-center">All Rights Reserved @2023</p></footer>
 
 </body>
 
